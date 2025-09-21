@@ -4,6 +4,11 @@ const WAITLIST_URL = "https://docs.google.com/forms/d/e/1FAIpQLScCNzSwwgPmUIiZLU
 
 function App() {
   const currentYear = new Date().getFullYear();
+  const publicUrl = process.env.PUBLIC_URL;
+  const hippoImageSrc =
+    publicUrl && publicUrl !== '/'
+      ? `${publicUrl}/cute_hippo.png`
+      : 'cute_hippo.png';
 
   const handleJoinWaitlist = () => {
     window.open(WAITLIST_URL, '_blank', 'noopener,noreferrer');
@@ -58,7 +63,7 @@ function App() {
             <div className="flex items-center justify-center order-1 lg:order-2">
               <div className="w-full max-w-xs sm:max-w-sm p-2 bg-gradient-to-br from-hippo-light/20 via-hippo-medium/30 to-hippo-dark/20 rounded-xl">
                 <img 
-                  src={`${process.env.PUBLIC_URL}/cute_hippo.png`} 
+                  src={hippoImageSrc}
                   alt="Cute hippo mascot" 
                   className="w-full h-auto object-contain rounded-lg shadow-lg"
                 />
