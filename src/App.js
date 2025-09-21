@@ -4,11 +4,11 @@ const WAITLIST_URL = "https://docs.google.com/forms/d/e/1FAIpQLScCNzSwwgPmUIiZLU
 
 function App() {
   const currentYear = new Date().getFullYear();
-  const publicUrl = process.env.PUBLIC_URL;
-  const hippoImageSrc =
-    publicUrl && publicUrl !== '/'
-      ? `${publicUrl}/cute_hippo.png`
-      : 'cute_hippo.png';
+  const basePublicUrl = process.env.PUBLIC_URL || '';
+  const normalizedPublicUrl = basePublicUrl.endsWith('/')
+    ? basePublicUrl.slice(0, -1)
+    : basePublicUrl;
+  const hippoImageSrc = `${normalizedPublicUrl}/cute_hippo.png`;
 
   const handleJoinWaitlist = () => {
     window.open(WAITLIST_URL, '_blank', 'noopener,noreferrer');
