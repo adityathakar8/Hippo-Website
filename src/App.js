@@ -58,7 +58,7 @@ function App() {
             <div className="flex items-center justify-center order-1 lg:order-2">
               <div className="w-full max-w-xs sm:max-w-sm p-2 bg-gradient-to-br from-hippo-light/20 via-hippo-medium/30 to-hippo-dark/20 rounded-xl">
                 <img 
-                  src="/https://github.com/adityathakar8/Hippo-Website/edit/master/src/App.js#:~:text=cute_hippo.png" 
+                  src="/cute_hippo.png" 
                   alt="Cute hippo mascot" 
                   className="w-full h-auto object-contain rounded-lg shadow-lg"
                 />
