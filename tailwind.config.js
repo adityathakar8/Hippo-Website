@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         'silom': ['Silom', 'monospace'],
         'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'alfa-slab': ['Alfa Slab One', 'serif'],
       },
       fontSize: {
         'display': '64px',

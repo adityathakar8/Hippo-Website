@@ -12,37 +12,36 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Sticky Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-hippo-light">
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-hippo-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-14 sm:h-16">
-            <div className="font-silom text-xl sm:text-2xl text-hippo-darkest">
+          <div className="flex flex-col items-center justify-center gap-2 min-h-16 sm:min-h-20 md:min-h-24 py-2 lg:flex-row lg:justify-between lg:items-center">
+            <div className="font-silom text-3xl sm:text-3xl md:text-4xl lg:text-5xl text-hippo-darkest leading-none text-center lg:text-left">
               hippo
             </div>
             <button
               onClick={handleJoinWaitlist}
-              className="btn-primary text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-3"
+              className="btn-primary text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-3 shrink-0 hidden lg:inline-flex"
               aria-label="Join the waitlist"
             >
-              <span className="hidden sm:inline">Join the Waitlist</span>
-              <span className="sm:hidden">Join</span>
+              Join the Waitlist
             </button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="pt-14 sm:pt-16 min-h-screen bg-gradient-to-br from-hippo-light via-hippo-medium to-hippo-dark flex items-center">
+      <section className="pt-20 sm:pt-24 md:pt-28 min-h-screen bg-gradient-to-br from-hippo-light via-hippo-medium to-hippo-dark flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Left Column - Content */}
             <div className="text-center lg:text-left fade-in order-2 lg:order-1">
-              <h1 className="font-silom text-3xl sm:text-4xl md:text-5xl lg:text-display text-hippo-darkest mb-4 sm:mb-6 leading-tight">
+              <h1 className="font-alfa-slab text-3xl sm:text-4xl md:text-5xl lg:text-display text-hippo-darkest mb-4 sm:mb-6 leading-tight">
                 A permanent solution for temporary memorization.
               </h1>
               <p className="text-lg sm:text-xl text-hippo-darker mb-3 sm:mb-4">
                 Turn your short-term notes into long term memory
               </p>
-              <p className="text-base sm:text-lg text-hippo-dark mb-8 sm:mb-12">
+              <p className="text-base sm:text-lg text-hippo-white mb-8 sm:mb-12">
                 hippo uses Free+Active Recall combined with spaced repetition to help you retain information permanently.
               </p>
               <button
