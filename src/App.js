@@ -35,7 +35,7 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Left Column - Content */}
             <div className="text-center lg:text-left fade-in order-2 lg:order-1">
-              <h1 className="font-alfa-slab text-3xl sm:text-4xl md:text-5xl lg:text-display text-hippo-darkest mb-4 sm:mb-6 leading-tight">
+              <h1 className="font-silom text-3xl sm:text-4xl md:text-5xl lg:text-display text-hippo-darkest mb-4 sm:mb-6 leading-tight">
                 A permanent solution for temporary memorization.
               </h1>
               <p className="text-lg sm:text-xl text-hippo-darker mb-3 sm:mb-4">
